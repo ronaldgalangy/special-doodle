@@ -31,8 +31,5 @@ dependencies {
     })
     compile "com.android.support:appcompat-v7:$appcompat_version"
     testCompile 'junit:junit:4.12'
-    compile "org.jetbrains.kotlin:kotlin-stdlib:t $kotlin_version"
-}
-repositories {
-    mavenCentral()
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

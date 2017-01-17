@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Prototype</string>
+    <string name="indooratlas_api_key">@string/app_name</string>
+    <string name="indooratlas_api_secret">@string/app_name</string>
 </resources>

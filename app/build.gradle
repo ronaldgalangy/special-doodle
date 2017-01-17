@@ -30,6 +30,17 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "com.android.support:appcompat-v7:$appcompat_version"
+    compile "com.android.support:design:$appcompat_version"
     testCompile 'junit:junit:4.12'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    compile "com.indooratlas.android:indooratlas-android-sdk:$ia_version"
+    compile "com.davemorrissey.labs:subsampling-scale-image-view:$scaleimage_version"
+
+    compile "io.reactivex:rxjava:$rxjava_version"
+    compile "io.reactivex:rxandroid:$rxandroid_version"
+
+    compile "com.squareup.retrofit2:retrofit:$retrofit_version"
+    compile "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofit_version"
 }

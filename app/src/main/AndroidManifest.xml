@@ -8,19 +8,20 @@
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <meta-data
-        android:name="com.indooratlas.android.sdk.API_KEY"
-        android:value="@string/indooratlas_api_key" />
-    <meta-data
-        android:name="com.indooratlas.android.sdk.API_SECRET"
-        android:value="@string/indooratlas_api_secret" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.indooratlas.android.sdk.API_KEY"
+            android:value="@string/indooratlas_api_key" />
+        <meta-data
+            android:name="com.indooratlas.android.sdk.API_SECRET"
+            android:value="@string/indooratlas_api_secret" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +29,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".service.BackgroundService"
+            android:exported="false"/>
     </application>
 
 </manifest>

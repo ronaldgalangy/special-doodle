@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Prototype</string>
-    <string name="indooratlas_api_key">@string/app_name</string>
-    <string name="indooratlas_api_secret">@string/app_name</string>
+    <string name="indooratlas_floor_plan_id">eaa96f8f-a1ed-4400-8e4b-a161dbe13375</string>
+    <string name="indooratlas_api_key">8e2cc0d3-72e2-423a-aef0-ac9e037e53a6</string>
+    <string name="indooratlas_api_secret">MlFNV+RM3j+Wwz6xxMuionak2yTEau8Q95p6KFs71KiZq0RjlRzTHGa3Y3hB6r1p6uxJHBn5l8qKjRA+qSu9ntzJ6MMLu9hYdJaeWm1752eCG5Ssrr3Gt+2DK2Myzw==</string>
 </resources>

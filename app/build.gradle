@@ -14,13 +14,22 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            minifyEnabled false
+            buildConfigField 'String', 'FLOOR_PLAN_ID', '\"eaa96f8f-a1ed-4400-8e4b-a161dbe13375\"'
+            buildConfigField 'String', 'API_BASE', '\"api_base_here\"'
+        }
+
         release {
+            buildConfigField 'String', 'FLOOR_PLAN_ID', '\"eaa96f8f-a1ed-4400-8e4b-a161dbe13375\"'
+            buildConfigField 'String', 'API_BASE', '\"api_base_here\"'
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
+        main.java.srcDirs += 'src/main/java'
     }
 }
 
